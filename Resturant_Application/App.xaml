@@ -1,0 +1,13 @@
+﻿<Application x:Class="Resturant_Application.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Grobal_Page.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="MyTemplate" TargetType="{x:Type Button}">
+            <Grid>
+                <Ellipse Fill="#FFDED9D9" Stroke="Red" />
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+            </Grid>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Resturant_DatabaseModelStoreContainer" CdmEntityContainer="Resturant_DatabaseEntities">
+    <EntitySetMapping Name="BillTable">
+      <EntityTypeMapping TypeName="Resturant_DatabaseModel.BillTable">
+        <MappingFragment StoreEntitySet="BillTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DishId" ColumnName="DishId" />
+          <ScalarProperty Name="TableId" ColumnName="TableId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dish">
+      <EntityTypeMapping TypeName="Resturant_DatabaseModel.Dish">
+        <MappingFragment StoreEntitySet="Dish">
+          <ScalarProperty Name="DishId" ColumnName="DishId" />
+          <ScalarProperty Name="DishName" ColumnName="DishName" />
+          <ScalarProperty Name="DishPrice" ColumnName="DishPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="Resturant_DatabaseModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="TableId" ColumnName="TableId" />
+          <ScalarProperty Name="TableStatus" ColumnName="TableStatus" />
+          <ScalarProperty Name="NumberOfPeople" ColumnName="NumberOfPeople" />
+          <ScalarProperty Name="NumberOfDishes" ColumnName="NumberOfDishes" />
+          <ScalarProperty Name="WaiterId" ColumnName="WaiterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Waiter">
+      <EntityTypeMapping TypeName="Resturant_DatabaseModel.Waiter">
+        <MappingFragment StoreEntitySet="Waiter">
+          <ScalarProperty Name="WaiterStatus" ColumnName="WaiterStatus" />
+          <ScalarProperty Name="WaiterId" ColumnName="WaiterId" />
+          <ScalarProperty Name="WaiterName" ColumnName="WaiterName" />
+          <ScalarProperty Name="EarnMoney" ColumnName="EarnMoney" />
+          <ScalarProperty Name="NumberOfHandleTable" ColumnName="NumberOfHandleTable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
